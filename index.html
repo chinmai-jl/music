@@ -1,0 +1,335 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chinmai Music World</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #10101c;
+        color: white;
+      }
+
+      header {
+        background: linear-gradient(90deg, #e50914, #6418a8);
+        text-align: center;
+        padding: 25px;
+      }
+
+      nav {
+        background: #25253a;
+        text-align: center;
+        padding: 18px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 12px;
+      }
+
+      h2 {
+        color: #ffca28;
+        text-align: center;
+        margin-top: 35px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .music-card {
+        background: #25253a;
+        width: 400px;
+        max-width: 100%;
+        padding: 15px;
+        border-radius: 12px;
+      }
+
+      .music-card iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+      }
+
+      /* One teaser per row */
+      .teaser-card {
+        background: #25253a;
+        max-width: 1000px;
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      .teaser-row {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+      }
+
+      .video-box {
+        flex: 2;
+        min-width: 0;
+      }
+
+      .video-box iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: none;
+        border-radius: 10px;
+        display: block;
+      }
+
+      .poster-box {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .poster-box img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+      }
+
+      .caption {
+        color: #dddded;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+
+      footer {
+        background: #25253a;
+        text-align: center;
+        padding: 20px;
+        margin-top: 35px;
+      }
+
+      @media (max-width: 600px) {
+        .teaser-row {
+          flex-direction: column;
+        }
+
+        .video-box,
+        .poster-box {
+          width: 100%;
+        }
+
+        .poster-box img {
+          max-height: 350px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>🎵 Chinmai Music World 🎬</h1>
+      <p>Listen to Music and Watch Movie Teasers</p>
+    </header>
+
+    <nav>
+      <a href="#songs">Songs</a>
+      <a href="#teasers">Movie Teasers</a>
+    </nav>
+
+    <!-- AUDIO SECTION: KEPT AS BEFORE -->
+
+    <h2 id="songs">🎵 Five Sanjith Hegde Songs</h2>
+
+    <div class="container">
+      <div class="music-card">
+        <h3>Listen to All Five Songs</h3>
+
+        <iframe
+          src="https://open.spotify.com/embed/album/3PDKQGvu0U5ibKqVGIQmQq?utm_source=generator"
+          title="Sanjith Hegde songs"
+          allow="
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            fullscreen;
+            picture-in-picture;
+          "
+        >
+        </iframe>
+
+        <p>Select a track in the player to listen.</p>
+      </div>
+    </div>
+
+    <!-- MOVIE TEASERS -->
+
+    <h2 id="teasers">🔥 Movie Teasers</h2>
+
+    <!-- 1. SALAAR -->
+
+    <div class="teaser-card">
+      <h3>1. Salaar Teaser</h3>
+
+      <div class="teaser-row">
+        <div class="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/bUR_FKt7Iso"
+            title="Salaar teaser"
+            allow="encrypted-media; picture-in-picture; fullscreen"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="poster-box">
+          <img
+            src="https://img.youtube.com/vi/bUR_FKt7Iso/hqdefault.jpg"
+            alt="Salaar teaser poster"
+          />
+        </div>
+      </div>
+
+      <p class="caption">
+        Watch the Salaar teaser featuring Prabhas. Experience the action,
+        powerful visuals and background music.
+      </p>
+    </div>
+
+    <!-- 2. KGF CHAPTER 1 -->
+
+    <div class="teaser-card">
+      <h3>2. KGF Chapter 1 Teaser</h3>
+
+      <div class="teaser-row">
+        <div class="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/qXgF-iJ_ezE"
+            title="KGF Chapter 1 teaser"
+            allow="encrypted-media; picture-in-picture; fullscreen"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="poster-box">
+          <img
+            src="https://img.youtube.com/vi/qXgF-iJ_ezE/hqdefault.jpg"
+            alt="KGF Chapter 1 teaser poster"
+          />
+        </div>
+      </div>
+
+      <p class="caption">
+        Enter the world of Rocky and the Kolar Gold Fields in this action-packed
+        KGF teaser.
+      </p>
+    </div>
+
+    <!-- 3. KGF CHAPTER 2 -->
+
+    <div class="teaser-card">
+      <h3>3. KGF Chapter 2 Teaser</h3>
+
+      <div class="teaser-row">
+        <div class="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/EfxU3M47jTQ"
+            title="KGF Chapter 2 teaser"
+            allow="encrypted-media; picture-in-picture; fullscreen"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="poster-box">
+          <img
+            src="https://img.youtube.com/vi/EfxU3M47jTQ/hqdefault.jpg"
+            alt="KGF Chapter 2 teaser poster"
+          />
+        </div>
+      </div>
+
+      <p class="caption">
+        Witness Rocky's empire in the official KGF Chapter 2 teaser. Watch the
+        video directly in the player.
+      </p>
+    </div>
+
+    <!-- 4. PUSHPA 2 -->
+
+    <div class="teaser-card">
+      <h3>4. Pushpa 2 Teaser</h3>
+
+      <div class="teaser-row">
+        <div class="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/wboGYls1Bns"
+            title="Pushpa 2 teaser"
+            allow="encrypted-media; picture-in-picture; fullscreen"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="poster-box">
+          <img
+            src="https://img.youtube.com/vi/wboGYls1Bns/hqdefault.jpg"
+            alt="Pushpa 2 teaser poster"
+          />
+        </div>
+      </div>
+
+      <p class="caption">
+        Watch the Pushpa 2 teaser and explore the next chapter of Pushpa Raj's
+        story.
+      </p>
+    </div>
+
+    <!-- 5. SALAAR OFFICIAL TRAILER: REPLACES PUSHPA 1 -->
+
+    <div class="teaser-card">
+      <h3>5. Salaar Official Trailer</h3>
+
+      <div class="teaser-row">
+        <div class="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/wcpzcXX5jq4"
+            title="Salaar official trailer"
+            allow="encrypted-media; picture-in-picture; fullscreen"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="poster-box">
+          <img
+            src="https://img.youtube.com/vi/wcpzcXX5jq4/hqdefault.jpg"
+            alt="Salaar official trailer poster"
+          />
+        </div>
+      </div>
+
+      <p class="caption">
+        Enjoy the official Salaar trailer from Hombale Films, featuring Prabhas
+        and Prithviraj Sukumaran.
+      </p>
+    </div>
+
+    <footer>
+      <p>© 2026 Chinmai Music World</p>
+      <p>Created using HTML, CSS and YouTube embeds</p>
+    </footer>
+  </body>
+</html>
+```
